@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD REMEDIES</title>
+    <link href="addremedies.css" rel="stylesheet">
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/IlMc4sXXp2DFoPTU/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Thanks For User Values :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+    <div class="add">
+        <form id="myForm" class="myform">
+        <label class="ill">ENTER THE ILLNESS: </label>
+        <input name="illness" type="text" id="ill">
+        <label class="rill">ENTER REMEDIE: </label>
+        <input name="remedy" type="reme" id="re">
+        <div class="ext">
+            <span>
+                !!The Remedie will be added after the through checking of it!!
+            </span>
+        </div>
+    </form>
+    <button  class="submit" onclick="SubForm()">SUBMIT</button>
+    </div>
+</body>
+</html>

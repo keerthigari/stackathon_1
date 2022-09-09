@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIEW!</title>
+    <link href="./review.css" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+<script>
+    function SubForm (){
+        $.ajax({
+            url:"https://api.apispreadsheets.com/data/t5nuWjWnH962fTGD/",
+            type:"post",
+            data:$("#myForm").serializeArray(),
+            success: function(){
+                alert("Thanks For Reviewing :)")
+            },
+            error: function(){
+                alert("There was an error :(")
+            }
+        });
+    }
+</script>
+</head>
+<body>
+    <div class="review">
+        <form id="myForm" class="myform">
+        <span class="text">REVIEW IT!!!</span>
+        <input type="text" id="name"name="name" placeholder="Enter Ur Name">
+        <input type="rating" id="rating" name="rating" placeholder="rate from 0 to 5">
+        </form>
+        <button class="button" onclick="SubForm()">SUBMIT</button>
+    </div>
+</body>
+</html>

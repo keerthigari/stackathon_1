@@ -1,0 +1,145 @@
+body{
+    margin:0;
+    position: absolute;
+    display: flex;
+    /*background-color:rgb(110, 243, 110);*/
+}
+.content{
+    height:1600px;
+    width:1000px;
+    background-color:beige;
+    border-radius: 15px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    position: relative;
+    left:175px;
+    top:25px;
+}
+.dec{
+    background-image: linear-gradient(red,cyan);
+    position: relative;
+    height:1600px;
+    width:75px;
+    left:120px;
+}
+.right{
+    left:300px;
+}
+.left{
+    left:50px;
+}
+.content{
+    text-align: center;
+}
+.main{
+    position: relative;
+    color:red;
+    top:30px;
+    font-size: 30px;
+}
+.context{
+    position: relative;
+    height:300px;
+    width:600px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    top:60px;
+    left:25px;
+    overflow: scroll;
+    
+}
+.image{
+    position: relative;
+    width:300px;
+    top:-245px;
+    left:312.5px;
+    height:300px;
+    border-radius: 15px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+.info{
+    text-align: center;
+    color:black;
+    font-size: 20px;
+}
+.header{
+    position: relative;
+    font-size: 30px;
+}
+.s{
+    color:rgb(137, 105, 105);
+    top:-230px;
+}
+.Symptoms{
+    position: relative;
+    height: 300px;
+    width:950px;
+    background-color:aliceblue;
+    border-radius: 15px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    left:25px;
+    top:-200px;
+    overflow: scroll;
+}
+.r{
+    color:cadetblue;
+    top:-180px;
+}
+.Remedies{
+    position: relative;
+    height: 600px;
+    width:950px;
+    background-color:aliceblue;
+    border-radius: 15px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    left:25px;
+    top:-170px;
+    overflow: scroll;
+}
+.button{
+    position: relative;
+    border-radius: 15px;
+    background-color: darkkhaki;
+    width:125px;
+    height:50px;
+    top:-125px;
+    cursor: pointer;
+    border-width: 2px;
+}
+.remedies{
+    left:-100px;
+}
+.feedback{
+    left:100px;
+}
+.button:hover{
+    background-color: aquamarine;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.sy{
+    text-align: left;
+}
+.lite{
+    color: red;
+}

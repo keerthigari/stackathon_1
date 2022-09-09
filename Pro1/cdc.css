@@ -1,0 +1,29 @@
+body{
+    margin:0;
+    position: absolute;
+    background-color: bisque;
+}
+.box{
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    position: relative;
+    width:350px;
+    height:400px;
+}
+.a{
+    left:50px;
+    top:25px;
+}
+.b{
+    left:450px;
+    top:-380px;
+}
+.c{
+    top:-785px;
+    left:850px;
+}
+.d{
+    top:-1185px;
+    left:1250px;
+}
